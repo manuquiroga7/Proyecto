@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <link rel="stylesheet" href="registros_view(administracion).css">
+    <title>XeXperience - Resgistros -</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <form method="post">
+            <input type="submit" value="Cerrar" name="cerrar" class="button">
+        </form>
+    </header>
+
+    <main>
+        <section>
+            <h2>Registro de usuario</h2>
+            <form method="post">
+                <div class="div">
+                    <label for="cedula">Cédula:</label>
+                    <input type="number" name="ci" required minlength="8" maxlength="8">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" required>
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" required>
+                    <div>
+                            <select id="opciones" name="tipo" required>
+                            <option value="Alumno">Alumno</option>
+                            <option value="F.Docente">Docente</option>
+                            <option value="F.Administrativo">Administrativo</option>
+                            <option value="F.Mantenimiento">De mantenimiento</option>
+                            <option value="F.Auxiliar">Auxiliar</option>
+                            </select>
+    
+                            <input type="submit" value="Registrar" name="registrar" class="button2">
+                    </div>
+                    <input type="submit" value="Cancelar" name="cancelar" class="button2">
+                </div>
+            </form>
+        </section> 
+        </main> 
+</body>
+
+</html>
